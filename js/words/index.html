@@ -1,0 +1,8 @@
+
+<form data-ng-submit="WordIndexViewModel.search(query)">
+<input type="text" data-ng-model="query" />
+<button type="submit" >Search!</button>
+
+<div data-ng-repeat="word in WordIndexViewModel.words.results">
+    <p>Year: {{word.year}} - Count: {{word.count}}</p>
+</div>
